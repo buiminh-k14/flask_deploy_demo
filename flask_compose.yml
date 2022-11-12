@@ -1,0 +1,15 @@
+version: "3"
+services:
+  port3000:
+    image: buiminhk14/flask_sample:v1
+    container_name: flask_sample_3000
+    ports:
+      - 3000:5000
+    restart: unless-stopped
+  port5000:
+    image: buiminhk14/flask_sample:v1
+    container_name: flask_sample_5000
+    ports:
+      - 5000:5000
+    restart: unless-stopped
+
